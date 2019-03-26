@@ -1,0 +1,11 @@
+{
+    "require": {
+    },
+    "scripts": {
+        "dev": "php -S localhost:8080 index.php"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.2",
+        "barnebys/now-env": "^0.0.1"
+    }
+}

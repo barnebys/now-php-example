@@ -1,0 +1,35 @@
+{
+  "name": "php-composer",
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.php",
+      "use": "@barnebys/php",
+      "config": {
+        "composerVersion": "1.8.0",
+        "composerJson": "composer.json",
+        "documentRoot": "/index.php",
+        "staticRegexps": [
+          "/.css$/",
+          "/.gif$/",
+          "/.ico$/",
+          "/.js$/",
+          "/.jpg$/",
+          "/.png$/",
+          "/.svg$/",
+          "/.woff$/",
+          "/.woff2$/"
+        ]
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/(.*)", "dest": "/" }
+  ],
+  "env": {
+    "SECRET": "@my-secret-key",
+    "ANOTHER_SECRET": "@my-other-secret-key",
+    "SECRET_FAIL": "@this-is-not-defined"
+  }
+}
