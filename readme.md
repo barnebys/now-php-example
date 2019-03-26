@@ -1,11 +1,6 @@
-# PHP 7 with composer
+# Serverless PHP examples
 
-In this example we will be deploying a "Hello World" example with PHP and Composer.
-
-### Deploy with Now
-Just run now
-
-`$ now`
+Collection of examples on deploying PHP on Now. 
 
 # Disclaimer
 
