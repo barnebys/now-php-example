@@ -1,0 +1,24 @@
+{
+  "name": "php-monorepo",
+  "version": 2,
+  "builds": [
+    {
+      "src": "composer/index.php",
+      "use": "@barnebys/php"
+    },
+    {
+      "src": "phalcon/index.php",
+      "use": "@barnebys/php"
+    },
+    {
+      "src": "now-env/index.php",
+      "use": "@barnebys/php"
+    }
+  ],
+  "routes": [
+    { "src": "/composer/(.*)", "dest": "/composer/index.php" }
+  ],
+  "env": {
+    "SECRET": "@my-secret-key"
+  }
+}
